@@ -12,6 +12,7 @@ clear
 echo "Checking if the images were create (you should have 2 images: opensuse/leap:15.2 and oss152_mailserver"
 docker images
 sleep 5
+clear
 echo "Checking if the container is running..."
 docker ps -a
 sleep 5
