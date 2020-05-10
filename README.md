@@ -8,6 +8,7 @@ This will automatically download the Dockerfile needed to create an openSUSE 15.
 ## Dockerfile content:
 
 FROM opensuse/leap:15.2
+
 MAINTAINER cosmin.tanczel@gmail.com
 
 RUN zypper install -y dbus-1 systemd-sysvinit postfix dovecot clamav amavisd-new
