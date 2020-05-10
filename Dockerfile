@@ -1,4 +1,4 @@
-FROM opensuse:latest
+FROM opensuse/leap:15.2
 MAINTAINER Some people 
 
 RUN zypper install -y dbus-1 systemd-sysvinit
