@@ -20,3 +20,5 @@ CMD ["/sbin/init"]
 
 # Build the image using opensuse/leap:15.2 and Dockerfile content that enables systemctl:
 docker build -t=oss152_mailserver ./
+# Run the image:
+docker run -d --name=oss15_MailServer -v /sys/fs/cgroup:/sys/fs/cgroup:ro oss152_mailserver
