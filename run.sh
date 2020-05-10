@@ -2,7 +2,7 @@
 mkdir /tmp/oss15.2_MailServer
 cd /tmp/oss15.2_MailServer
 wget https://raw.githubusercontent.com/darkmac78/darkmac/master/Dockerfile
-docker build -t=oss152_mailserver ./; 
+docker build -t=oss152_mailserver ./
 clear
 echo "Docker Images:"
 docker images
