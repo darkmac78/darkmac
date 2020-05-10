@@ -22,3 +22,5 @@ CMD ["/sbin/init"]
 docker build -t=oss152_mailserver ./
 # Run the image:
 docker run -d --name=oss15_MailServer -v /sys/fs/cgroup:/sys/fs/cgroup:ro oss152_mailserver
+# Conect to the running docker image (bash)
+docker exec -it oss15_MailServer bash
