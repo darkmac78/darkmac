@@ -1,7 +1,7 @@
 # Build an opensuse 15.2 image with systemctl enabled:
 
 Run the following in bash with root privileges: 
-curl -L https://raw.githubusercontent.com/darkmac78/darkmac/master/run.sh | bash
+"curl -L https://raw.githubusercontent.com/darkmac78/darkmac/master/run.sh | bash"
 
 ## Dockerfile content:
 
