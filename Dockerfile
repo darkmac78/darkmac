@@ -18,3 +18,4 @@ RUN cp /usr/lib/systemd/system/dbus.service /etc/systemd/system/; \
 VOLUME ["/sys/fs/cgroup", "/run"]
 
 CMD ["/sbin/init"]
+docker run -d --name=oss15_MailServer -v /sys/fs/cgroup:/sys/fs/cgroup:ro oss152_mailserver
