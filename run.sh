@@ -6,6 +6,7 @@ clear
 echo "Building the openSUSE15.2 image..."
 sleep 3
 docker build -t=oss152_mailserver ./
+docker images
 clear
 docker run -d --name=oss15_MailServer -v /sys/fs/cgroup:/sys/fs/cgroup:ro oss152_mailserver
 clear
