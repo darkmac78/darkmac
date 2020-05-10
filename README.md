@@ -3,6 +3,8 @@
 Run the following in bash with root privileges: 
 "curl -L https://raw.githubusercontent.com/darkmac78/darkmac/master/run.sh | bash"
 
+This will automatically download the Dockerfile needed to create an openSUSE 15.2 image and enable systemctl and will deploy the docker image.
+
 ## Dockerfile content:
 
 FROM opensuse:leap
