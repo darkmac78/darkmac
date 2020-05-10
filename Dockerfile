@@ -7,3 +7,5 @@ RUN cp /usr/lib/systemd/system/dbus.service /etc/systemd/system/; sed -i 's/OOMS
 VOLUME ["/sys/fs/cgroup", "/run"]
 
 CMD ["/sbin/init"]
+RUN sed -i '/myhostname/c\$myhostname = 'mail.itcomunicatii.ro';' /etc/amavisd.conf
+RUN systemctl start amavis
