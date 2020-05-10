@@ -1,6 +1,6 @@
 FROM opensuse/leap:15.2
 MAINTAINER cosmin.tanczel@gmail.com
-RUN zypper ar --gpgcheck-allow-unsigned-repo http://download.opensuse.org/repositories/server:/php:/applications/openSUSE_Leap_15.2/ server-php-applications
+RUN zypper ar --gpgcheck-allow-unsigned-repo http://download.opensuse.org/repositories/server:/php:/applications/openSUSE_Leap_15.2/ server-php-applications | echo 'a'
 RUN zypper --gpg-auto-import-keys ref
 RUN zypper clean --all
 RUN zypper install -y -l --allow-unsigned-rpm dbus-1 systemd-sysvinit postfix dovecot squirrelmail amavisd-new clamav freshclam postgrey
